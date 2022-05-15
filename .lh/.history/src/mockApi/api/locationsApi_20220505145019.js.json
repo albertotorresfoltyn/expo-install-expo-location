@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".history/src/mockApi/api/locationsApi_20220505145019.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1652570413059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1652570413059,
+            "name": "Commit-0",
+            "content": "import camelize from \"camelize\";\nimport { locations } from \"../mockData/locations/locations\";\n\nconst geoCodeLocation = (address = \"Corrientes\") => {\n    return new Promise((resolve, reject) => {\n        const location = locations[address];\n\n        setTimeout(() => {\n            if (!location) {\n                reject(\"Location not found!\");\n            } else {\n                resolve(formatLocation(location));\n            }\n        }, 2000);\n    });\n};\n\nconst formatLocation = (location) => {\n    const formattedResponse = camelize(location);\n    return formattedResponse;\n};\n\n// geoCodeLocation()\n//     .then((data) => {\n//         console.log(data);\n//     })\n//     .catch((err) => {\n//         console.log(err);\n//     });\n\nexport default geoCodeLocation;\n"
+        }
+    ]
+}

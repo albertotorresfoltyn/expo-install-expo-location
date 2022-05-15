@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/contexts/LocationProvider.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1652570402756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1652572350852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export const LocationContext = createContext();\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n-    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n+    const [coords, setCoords] = useState(\"-28.2941251,-58.9356035\");\n     const [region, setRegion] = useState({});\n \n     const fetchLocation = useCallback(async () => {\n         try {\n"
+                }
+            ],
+            "date": 1652570402756,
+            "name": "Commit-0",
+            "content": "import React, { useEffect, useState, createContext, useCallback } from \"react\";\nimport geoCodeLocation from \"../mockApi/api/locationsApi\";\n\nexport const LocationContext = createContext();\n\nexport const LocationProvider = ({ children }) => {\n    const [location, setLocation] = useState(\"Corrientes\");\n    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n    const [region, setRegion] = useState({});\n\n    const fetchLocation = useCallback(async () => {\n        try {\n            const data = await geoCodeLocation(location);\n            const { lat, lng } = data.results[0].geometry.location;\n            const { northeast, southwest } = data.results[0].geometry.viewport;\n            setCoords(`${lat},${lng}`);\n            const latDelta = northeast.lat - southwest.lat;\n            setRegion({\n                latitude: lat,\n                longitude: lng,\n                latitudeDelta: latDelta,\n                longitudeDelta: 0.01,\n            });\n        } catch (err) {\n            console.log(err);\n        }\n    }, [location]);\n\n    useEffect(() => {\n        fetchLocation();\n    }, [fetchLocation]);\n\n    return (\n        <LocationContext.Provider\n            value={{ location, setLocation, coords, region }}\n        >\n            {children}\n        </LocationContext.Provider>\n    );\n};\n"
+        }
+    ]
+}

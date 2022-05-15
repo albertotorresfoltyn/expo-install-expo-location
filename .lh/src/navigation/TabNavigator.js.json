@@ -1,0 +1,54 @@
+{
+    "sourceFile": "src/navigation/TabNavigator.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 9,
+            "patches": [
+                {
+                    "date": 1652621891180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1652622155002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,10 @@\n             <Tab.Screen\n                 name=\"Restaurants\"\n                 component={RestaurantsStackNavigator}\n             />\n-            {//<Tab.Screen name=\"Checkout\" component={CheckoutStackNavigator} />}\n+            {/*<Tab.Screen name=\"Checkout\" component={CheckoutStackNavigator}*/ />}\n             <Tab.Screen name=\"Map\" component={MapScreen} />\n-            {//<Tab.Screen name=\"Settings\" component={SettingsStackNavigator} />}\n+            {/*<Tab.Screen name=\"Settings\" component={SettingsStackNavigator} *//>}\n         </Tab.Navigator>\n     );\n };\n"
+                },
+                {
+                    "date": 1652622181517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,10 @@\n             <Tab.Screen\n                 name=\"Restaurants\"\n                 component={RestaurantsStackNavigator}\n             />\n-            {/*<Tab.Screen name=\"Checkout\" component={CheckoutStackNavigator}*/ />}\n+            {/*<Tab.Screen name=\"Checkout\" component={CheckoutStackNavigator} />*/}\n             <Tab.Screen name=\"Map\" component={MapScreen} />\n-            {/*<Tab.Screen name=\"Settings\" component={SettingsStackNavigator} *//>}\n+            {/*<Tab.Screen name=\"Settings\" component={SettingsStackNavigator} />*/}\n         </Tab.Navigator>\n     );\n };\n"
+                },
+                {
+                    "date": 1652631863767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n const Tab = createBottomTabNavigator();\n \n const TAB_ICON = {\n-    Restaurants: \"md-restaurant\",\n+    Restaurants: \"md-hospital\",\n     Map: \"md-map\",\n     Settings: \"md-settings\",\n     Checkout: \"md-cart\",\n };\n"
+                },
+                {
+                    "date": 1652632040500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n const Tab = createBottomTabNavigator();\n \n const TAB_ICON = {\n-    Restaurants: \"md-hospital\",\n+    Restaurants: \"md-medkit\",\n     Map: \"md-map\",\n     Settings: \"md-settings\",\n     Checkout: \"md-cart\",\n };\n"
+                },
+                {
+                    "date": 1652632108415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n                 inactiveTintColor: colors.brand.muted,\n             }}\n         >\n             <Tab.Screen\n-                name=\"Restaurants\"\n+                name=\"Centros de salud\"\n                 component={RestaurantsStackNavigator}\n             />\n             {/*<Tab.Screen name=\"Checkout\" component={CheckoutStackNavigator} />*/}\n             <Tab.Screen name=\"Map\" component={MapScreen} />\n"
+                },
+                {
+                    "date": 1652632236630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n const Tab = createBottomTabNavigator();\n \n const TAB_ICON = {\n-    Restaurants: \"md-medkit\",\n+    Restaurants: \"md-map\",\n     Map: \"md-map\",\n     Settings: \"md-settings\",\n     Checkout: \"md-cart\",\n };\n"
+                },
+                {
+                    "date": 1652632279838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n                 inactiveTintColor: colors.brand.muted,\n             }}\n         >\n             <Tab.Screen\n-                name=\"Centros de salud\"\n+                name=\"Salitas\"\n                 component={RestaurantsStackNavigator}\n             />\n             {/*<Tab.Screen name=\"Checkout\" component={CheckoutStackNavigator} />*/}\n             <Tab.Screen name=\"Map\" component={MapScreen} />\n"
+                },
+                {
+                    "date": 1652632307657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \n const Tab = createBottomTabNavigator();\n \n const TAB_ICON = {\n-    Restaurants: \"md-map\",\n+    Salitas: \"md-medkit\",\n     Map: \"md-map\",\n     Settings: \"md-settings\",\n     Checkout: \"md-cart\",\n };\n"
+                },
+                {
+                    "date": 1652632530081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,12 +37,9 @@\n                 activeTintColor: colors.brand.primary,\n                 inactiveTintColor: colors.brand.muted,\n             }}\n         >\n-            <Tab.Screen\n-                name=\"Salitas\"\n-                component={RestaurantsStackNavigator}\n-            />\n+            <Tab.Screen name=\"Salitas\" component={RestaurantsStackNavigator} />\n             {/*<Tab.Screen name=\"Checkout\" component={CheckoutStackNavigator} />*/}\n             <Tab.Screen name=\"Map\" component={MapScreen} />\n             {/*<Tab.Screen name=\"Settings\" component={SettingsStackNavigator} />*/}\n         </Tab.Navigator>\n"
+                }
+            ],
+            "date": 1652621891180,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport { createBottomTabNavigator } from \"@react-navigation/bottom-tabs\";\nimport { Ionicons } from \"@expo/vector-icons\";\n\nimport { RestaurantsStackNavigator } from \"./RestaurantsStackNavigator\";\n\nimport MapScreen from \"../screens/MapScreen\";\nimport { SettingsStackNavigator } from \"./SettingsStackNavigator\";\nimport { CheckoutStackNavigator } from \"./CheckoutStackNavigator\";\nimport { colors } from \"../theme/colors\";\n\nconst Tab = createBottomTabNavigator();\n\nconst TAB_ICON = {\n    Restaurants: \"md-restaurant\",\n    Map: \"md-map\",\n    Settings: \"md-settings\",\n    Checkout: \"md-cart\",\n};\n\nexport const TabNavigator = () => {\n    return (\n        <Tab.Navigator\n            screenOptions={({ route }) => ({\n                tabBarIcon: ({ color, size }) => {\n                    // You can return any component that you like here!\n                    return (\n                        <Ionicons\n                            name={TAB_ICON[route.name]}\n                            size={size}\n                            color={color}\n                        />\n                    );\n                },\n            })}\n            tabBarOptions={{\n                activeTintColor: colors.brand.primary,\n                inactiveTintColor: colors.brand.muted,\n            }}\n        >\n            <Tab.Screen\n                name=\"Restaurants\"\n                component={RestaurantsStackNavigator}\n            />\n            {//<Tab.Screen name=\"Checkout\" component={CheckoutStackNavigator} />}\n            <Tab.Screen name=\"Map\" component={MapScreen} />\n            {//<Tab.Screen name=\"Settings\" component={SettingsStackNavigator} />}\n        </Tab.Navigator>\n    );\n};\n"
+        }
+    ]
+}

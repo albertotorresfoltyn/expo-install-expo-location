@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/navigation/RestaurantsStackNavigator.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1652632187411,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1652632192959,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,13 @@\n         <Stack.Navigator\n             headerMode=\"none\"\n             screenOptions={{ ...TransitionPresets.ModalPresentationIOS }}\n         >\n-            <Stack.Screen name=\"Centros de salud\" component={RestaurantsScreen} />\n             <Stack.Screen\n+                name=\"Centros de salud\"\n+                component={RestaurantsScreen}\n+            />\n+            <Stack.Screen\n                 name=\"Restaurant Details\"\n                 component={RestaurantDetailsScreen}\n             />\n         </Stack.Navigator>\n"
+                },
+                {
+                    "date": 1652632257079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n             headerMode=\"none\"\n             screenOptions={{ ...TransitionPresets.ModalPresentationIOS }}\n         >\n             <Stack.Screen\n-                name=\"Centros de salud\"\n+                name=\"Salitas\"\n                 component={RestaurantsScreen}\n             />\n             <Stack.Screen\n                 name=\"Restaurant Details\"\n"
+                },
+                {
+                    "date": 1652632262795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,13 +14,10 @@\n         <Stack.Navigator\n             headerMode=\"none\"\n             screenOptions={{ ...TransitionPresets.ModalPresentationIOS }}\n         >\n+            <Stack.Screen name=\"Salitas\" component={RestaurantsScreen} />\n             <Stack.Screen\n-                name=\"Salitas\"\n-                component={RestaurantsScreen}\n-            />\n-            <Stack.Screen\n                 name=\"Restaurant Details\"\n                 component={RestaurantDetailsScreen}\n             />\n         </Stack.Navigator>\n"
+                }
+            ],
+            "date": 1652632187411,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport {\n    createStackNavigator,\n    TransitionPresets,\n} from \"@react-navigation/stack\";\n\nimport RestaurantsScreen from \"../screens/RestaurantsScreen\";\nimport RestaurantDetailsScreen from \"../screens/RestaurantDetailsScreen\";\n\nconst Stack = createStackNavigator();\n\nexport const RestaurantsStackNavigator = () => {\n    return (\n        <Stack.Navigator\n            headerMode=\"none\"\n            screenOptions={{ ...TransitionPresets.ModalPresentationIOS }}\n        >\n            <Stack.Screen name=\"Centros de salud\" component={RestaurantsScreen} />\n            <Stack.Screen\n                name=\"Restaurant Details\"\n                component={RestaurantDetailsScreen}\n            />\n        </Stack.Navigator>\n    );\n};\n"
+        }
+    ]
+}
