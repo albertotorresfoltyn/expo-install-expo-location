@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".history/src/navigation/RestaurantsStackNavigator_20220515132947.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1652637290058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1652637290058,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport {\n    createStackNavigator,\n    TransitionPresets,\n} from \"@react-navigation/stack\";\n\nimport RestaurantsScreen from \"../screens/RestaurantsScreen\";\nimport RestaurantDetailsScreen from \"../screens/RestaurantDetailsScreen\";\n\nconst Stack = createStackNavigator();\n\nexport const RestaurantsStackNavigator = () => {\n    return (\n        <Stack.Navigator\n            headerMode=\"none\"\n            screenOptions={{ ...TransitionPresets.ModalPresentationIOS }}\n        >\n            <Stack.Screen name=\"Centros de salud\" component={RestaurantsScreen} />\n            <Stack.Screen\n                name=\"Detalles del lugar\"\n                component={RestaurantDetailsScreen}\n            />\n        </Stack.Navigator>\n    );\n};\n"
+        }
+    ]
+}

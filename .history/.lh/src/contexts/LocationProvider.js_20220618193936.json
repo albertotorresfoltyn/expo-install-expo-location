@@ -11,11 +11,11 @@
                 },
                 {
                     "date": 1652572350852,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export const LocationContext = createContext();\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n-    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n+    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n     const [region, setRegion] = useState({});\n \n     const fetchLocation = useCallback(async () => {\n         try {\n"
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export const LocationContext = createContext();\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n-    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n+    const [coords, setCoords] = useState(\"-28.2941251,-58.9356035\");\n     const [region, setRegion] = useState({});\n \n     const fetchLocation = useCallback(async () => {\n         try {\n"
                 },
                 {
                     "date": 1655591798604,
-                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export const LocationContext = createContext();\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n-    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n+    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n     const [region, setRegion] = useState({});\n \n     const fetchLocation = useCallback(async () => {\n         try {\n"
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export const LocationContext = createContext();\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n-    const [coords, setCoords] = useState(\"-28.2941251,-58.9356035\");\n+    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n     const [region, setRegion] = useState({});\n \n     const fetchLocation = useCallback(async () => {\n         try {\n"
                 }
             ],
             "date": 1652570402756,

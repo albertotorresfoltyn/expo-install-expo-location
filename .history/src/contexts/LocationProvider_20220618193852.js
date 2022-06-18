@@ -4,7 +4,7 @@ import geoCodeLocation from "../mockApi/api/locationsApi";
 export const LocationContext = createContext();
 
 export const LocationProvider = ({ children }) => {
-    const [location, setLocation] = useState("san francisco");
+    const [location, setLocation] = useState("Corrientes");
     const [coords, setCoords] = useState("37.7749295,-122.4194155");
     const [region, setRegion] = useState({});
 

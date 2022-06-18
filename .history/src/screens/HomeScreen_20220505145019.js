@@ -23,7 +23,7 @@ export default function HomeScreen({ navigation }) {
                     resizeMode="cover"
                 />
             </AnimationWrapper>
-            <Title>Lozalizador de Salitas</Title>
+            <Title>Restaurants Finder</Title>
             <Spacer />
             <Container>
                 <StyledButton

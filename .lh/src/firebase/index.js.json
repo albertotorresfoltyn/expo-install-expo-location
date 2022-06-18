@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/firebase/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1652640754102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1652641071992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \n const firebaseConfig = {\n     apiKey: \"AIzaSyB8hNxux7O8hI57QsvwxaDSiguJImg6zrM-n6-GUyGcI\",\n     authDomain: \"clasificados-1873e.firebaseapp.com\",\n-    projectId: \"react-native-restaurant-finder\",\n+    projectId: \"clasificados-1873e\",\n     storageBucket: \"react-native-restaurant-finder.appspot.com\",\n     messagingSenderId: \"539220817325\",\n     appId: \"1:539220817325:web:fbceef7ba3855bbd165d24\",\n };\n"
+                },
+                {
+                    "date": 1652641272420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n const firebaseConfig = {\n     apiKey: \"AIzaSyB8hNxux7O8hI57QsvwxaDSiguJImg6zrM-n6-GUyGcI\",\n     authDomain: \"clasificados-1873e.firebaseapp.com\",\n     projectId: \"clasificados-1873e\",\n-    storageBucket: \"react-native-restaurant-finder.appspot.com\",\n+    storageBucket: \"clasificados-1873e.appspot.com\",\n     messagingSenderId: \"539220817325\",\n     appId: \"1:539220817325:web:fbceef7ba3855bbd165d24\",\n };\n \n"
+                },
+                {
+                    "date": 1652641459212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import * as firebase from \"firebase\";\n \n const firebaseConfig = {\n-    apiKey: \"AIzaSyB8hNxux7O8hI57QsvwxaDSiguJImg6zrM-n6-GUyGcI\",\n+    apiKey: \"AIzaSyB8hNxux7O8hI57QsvwxaDSiguJImg6zrM\",\n     authDomain: \"clasificados-1873e.firebaseapp.com\",\n     projectId: \"clasificados-1873e\",\n     storageBucket: \"clasificados-1873e.appspot.com\",\n-    messagingSenderId: \"539220817325\",\n+    messagingSenderId: \"687335332355\",\n     appId: \"1:539220817325:web:fbceef7ba3855bbd165d24\",\n };\n \n if (!firebase.apps.length) {\n"
+                },
+                {
+                    "date": 1652642056202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,14 @@\n \n const firebaseConfig = {\n     apiKey: \"AIzaSyB8hNxux7O8hI57QsvwxaDSiguJImg6zrM\",\n     authDomain: \"clasificados-1873e.firebaseapp.com\",\n+    databaseURL: \"https://clasificados-1873e.firebaseio.com\",\n     projectId: \"clasificados-1873e\",\n     storageBucket: \"clasificados-1873e.appspot.com\",\n     messagingSenderId: \"687335332355\",\n-    appId: \"1:539220817325:web:fbceef7ba3855bbd165d24\",\n+    appId: \"1:687335332355:web:e4a129ab613b2936264c36\",\n+    measurementId: \"G-4QDEP81683\"\n };\n \n if (!firebase.apps.length) {\n     firebase.initializeApp(firebaseConfig);\n"
+                }
+            ],
+            "date": 1652640754102,
+            "name": "Commit-0",
+            "content": "import * as firebase from \"firebase\";\n\nconst firebaseConfig = {\n    apiKey: \"AIzaSyB8hNxux7O8hI57QsvwxaDSiguJImg6zrM-n6-GUyGcI\",\n    authDomain: \"clasificados-1873e.firebaseapp.com\",\n    projectId: \"react-native-restaurant-finder\",\n    storageBucket: \"react-native-restaurant-finder.appspot.com\",\n    messagingSenderId: \"539220817325\",\n    appId: \"1:539220817325:web:fbceef7ba3855bbd165d24\",\n};\n\nif (!firebase.apps.length) {\n    firebase.initializeApp(firebaseConfig);\n}\n\nexport default firebase;\n"
+        }
+    ]
+}

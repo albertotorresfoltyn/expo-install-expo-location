@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/screens/MapScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1652637290059,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1652637290059,
+            "name": "Commit-0",
+            "content": "import React, { useContext } from \"react\";\nimport { Dimensions } from \"react-native\";\nimport styled from \"styled-components/native\";\nimport MapView from \"react-native-maps\";\nimport { LocationContext } from \"../contexts/LocationProvider\";\nimport { RestaurantsContext } from \"../contexts/RestaurantsProvider\";\nimport MapSearchBar from \"../components/MapSearchBar\";\nimport Loading from \"../components/Loading\";\nimport RestaurantCompactCard from \"../components/RestaurantCompactCard\";\n\nconst MapContainer = styled.View`\n    flex: 1;\n`;\n\nconst Map = styled(MapView)`\n    width: ${Dimensions.get(\"window\").width}px;\n    height: ${Dimensions.get(\"window\").height}px;\n`;\n\nexport default function MapScreen({ navigation }) {\n    const { region, location, setLocation } = useContext(LocationContext);\n    const { restaurants, loading } = useContext(RestaurantsContext);\n\n    if (loading) {\n        return <Loading />;\n    }\n\n    return (\n        <MapContainer>\n            <MapSearchBar location={location} setLocation={setLocation} />\n            <Map region={region}>\n                {restaurants.map((restaurant) => {\n                    return (\n                        <MapView.Marker\n                            key={restaurant.placeId}\n                            title={restaurant.name}\n                            coordinate={{\n                                latitude: restaurant.geometry.location.lat,\n                                longitude: restaurant.geometry.location.lng,\n                            }}\n                        >\n                            <MapView.Callout\n                                onPress={() => {\n                                    navigation.navigate(\"Detalles del lugar\", {\n                                        restaurant: restaurant,\n                                    });\n                                }}\n                            >\n                                <RestaurantCompactCard\n                                    map\n                                    restaurant={restaurant}\n                                />\n                            </MapView.Callout>\n                        </MapView.Marker>\n                    );\n                })}\n            </Map>\n        </MapContainer>\n    );\n}\n"
+        }
+    ]
+}

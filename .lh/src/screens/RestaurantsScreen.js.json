@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/screens/RestaurantsScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1652637290058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1652637290058,
+            "name": "Commit-0",
+            "content": "import React, { useContext, useEffect, useState } from \"react\";\nimport { FlatList, TouchableOpacity } from \"react-native\";\nimport styled from \"styled-components/native\";\nimport { FadeAnimation } from \"../animations/FadeAnimation\";\nimport FavoritesList from \"../components/FavoritesList\";\nimport Loading from \"../components/Loading\";\n\nimport RestaurantCard from \"../components/RestaurantCard\";\nimport RestaurantsSearchBar from \"../components/RestaurantsSearchBar\";\nimport SafeArea from \"../components/SafeArea\";\nimport { RestaurantsContext } from \"../contexts/RestaurantsProvider\";\n\nconst RestaurantsContainer = styled(FlatList).attrs({\n    contentContainerStyle: {\n        padding: 16,\n    },\n})``;\n\nconst RestaurantsScreen = ({ navigation }) => {\n    const { restaurants, loading } = useContext(RestaurantsContext);\n    const [isToggled, setIsToggled] = useState(false);\n\n    if (loading) {\n        return <Loading />;\n    }\n\n    return (\n        <SafeArea>\n            <RestaurantsSearchBar\n                toggled={isToggled}\n                setToggled={() => setIsToggled(!isToggled)}\n            />\n            {isToggled && <FavoritesList navigate={navigation.navigate} />}\n\n            <RestaurantsContainer\n                data={restaurants}\n                keyExtractor={(item) => item.placeId}\n                renderItem={(element) => {\n                    return (\n                        <TouchableOpacity\n                            onPress={() =>\n                                navigation.navigate(\"Detalles del lugar\", {\n                                    restaurant: element.item,\n                                })\n                            }\n                        >\n                            <FadeAnimation>\n                                <RestaurantCard restaurant={element.item} />\n                            </FadeAnimation>\n                        </TouchableOpacity>\n                    );\n                }}\n            />\n        </SafeArea>\n    );\n};\n\nexport default RestaurantsScreen;\n"
+        }
+    ]
+}

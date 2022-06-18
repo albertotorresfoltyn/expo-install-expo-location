@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Health-Finder",
-    "slug": "Health-Finder",
+    "name": "Restaurant-Finder",
+    "slug": "Restaurant-Finder",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

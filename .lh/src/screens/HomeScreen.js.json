@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/screens/HomeScreen.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1652643389881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1652643389881,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport { Title } from \"react-native-paper\";\nimport LottieView from \"lottie-react-native\";\nimport {\n    AnimationWrapper,\n    Background,\n    Container,\n    Cover,\n    Spacer,\n    StyledButton,\n} from \"../components/AuthStyles\";\n\nexport default function HomeScreen({ navigation }) {\n    return (\n        <Background>\n            <Cover />\n            <AnimationWrapper>\n                <LottieView\n                    source={require(\"../../assets/watermelon.json\")}\n                    key=\"animation\"\n                    loop\n                    autoPlay\n                    resizeMode=\"cover\"\n                />\n            </AnimationWrapper>\n            <Title>Lozalizador de Salitas</Title>\n            <Spacer />\n            <Container>\n                <StyledButton\n                    icon=\"lock-open-outline\"\n                    mode=\"contained\"\n                    onPress={() => navigation.navigate(\"Login\")}\n                >\n                    Login\n                </StyledButton>\n                <Spacer />\n                <StyledButton\n                    icon=\"email\"\n                    mode=\"contained\"\n                    onPress={() => navigation.navigate(\"Register\")}\n                >\n                    Register\n                </StyledButton>\n            </Container>\n        </Background>\n    );\n}\n"
+        }
+    ]
+}

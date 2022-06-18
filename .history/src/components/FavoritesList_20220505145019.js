@@ -36,7 +36,7 @@ export default function FavoritesList({ navigate }) {
                         <CardWrapper key={restaurant.placeId}>
                             <TouchableOpacity
                                 onPress={() =>
-                                    navigate("Detalles del lugar", {
+                                    navigate("Restaurant Details", {
                                         restaurant,
                                     })
                                 }

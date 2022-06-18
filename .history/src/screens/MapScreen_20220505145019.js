@@ -41,7 +41,7 @@ export default function MapScreen({ navigation }) {
                         >
                             <MapView.Callout
                                 onPress={() => {
-                                    navigation.navigate("Detalles del lugar", {
+                                    navigation.navigate("Restaurant Details", {
                                         restaurant: restaurant,
                                     });
                                 }}

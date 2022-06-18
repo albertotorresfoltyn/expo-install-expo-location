@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/FavoritesList.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1652637290058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1652637290058,
+            "name": "Commit-0",
+            "content": "import React, { useContext } from \"react\";\nimport { ScrollView, TouchableOpacity } from \"react-native\";\nimport { Card } from \"react-native-paper\";\nimport styled from \"styled-components/native\";\nimport { FavoritesContext } from \"../contexts/FavoritesProvider\";\nimport RestaurantCompactCard from \"./RestaurantCompactCard\";\n\nconst FavoritesContainer = styled(Card)`\n    padding: 10px;\n    border-radius: 15px;\n`;\n\nconst CardWrapper = styled.View`\n    padding-left: ${(props) => props.theme.space[3]};\n`;\n\nconst Title = styled.Text`\n    padding-left: ${(props) => props.theme.space[3]};\n    font-size: ${(props) => props.theme.fontSizes.body};\n    font-family: ${(props) => props.theme.fonts.heading};\n`;\n\nexport default function FavoritesList({ navigate }) {\n    const { favorites } = useContext(FavoritesContext);\n\n    if (favorites.length === 0) {\n        return null;\n    }\n\n    return (\n        <FavoritesContainer elevation={3}>\n            <Title>Favorites</Title>\n            <ScrollView horizontal showsHorizontalScrollIndicator={false}>\n                {favorites.map((restaurant) => {\n                    return (\n                        <CardWrapper key={restaurant.placeId}>\n                            <TouchableOpacity\n                                onPress={() =>\n                                    navigate(\"Detalles del lugar\", {\n                                        restaurant,\n                                    })\n                                }\n                            >\n                                <RestaurantCompactCard\n                                    restaurant={restaurant}\n                                />\n                            </TouchableOpacity>\n                        </CardWrapper>\n                    );\n                })}\n            </ScrollView>\n        </FavoritesContainer>\n    );\n}\n"
+        }
+    ]
+}

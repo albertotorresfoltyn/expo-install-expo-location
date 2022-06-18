@@ -5,7 +5,7 @@ export const LocationContext = createContext();
 
 export const LocationProvider = ({ children }) => {
     const [location, setLocation] = useState("Corrientes");
-    const [coords, setCoords] = useState("-28.2941251,-58.9356035");
+    const [coords, setCoords] = useState("37.7749295,-122.4194155");
     const [region, setRegion] = useState({});
 
     const fetchLocation = useCallback(async () => {
