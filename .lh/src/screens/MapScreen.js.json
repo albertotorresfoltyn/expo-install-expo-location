@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 28,
+            "activePatchIndex": 29,
             "patches": [
                 {
                     "date": 1652637290059,
@@ -120,6 +120,10 @@
                 {
                     "date": 1663450905140,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     return (\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map region={region}>\n-                {/*restaurants.map((restaurant) => {\n+                {restaurants.map((restaurant) => {\n                     return (\n                         <MapView.Marker\n                             key={restaurant.placeId}\n                             title={restaurant.name}\n@@ -52,9 +52,9 @@\n                                 />\n                             </MapView.Callout>\n                         </MapView.Marker>\n                     );\n-                })*/}\n+                })}\n             </Map>\n         </MapContainer>\n     );\n }\n"
+                },
+                {
+                    "date": 1663452044845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     }\n \n     return (\n         <MapContainer>\n-            <MapSearchBar location={location} setLocation={setLocation} />\n+            {/*<MapSearchBar location={location} setLocation={setLocation} />*/}\n             <Map region={region}>\n                 {restaurants.map((restaurant) => {\n                     return (\n                         <MapView.Marker\n"
                 }
             ],
             "date": 1652637290059,
