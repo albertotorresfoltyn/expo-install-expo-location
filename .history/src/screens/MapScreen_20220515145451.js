@@ -29,7 +29,7 @@ export default function MapScreen({ navigation }) {
         <MapContainer>
             <MapSearchBar location={location} setLocation={setLocation} />
             <Map region={region}>
-                {/*restaurants.map((restaurant) => {
+                {restaurants.map((restaurant) => {
                     return (
                         <MapView.Marker
                             key={restaurant.placeId}
@@ -53,7 +53,7 @@ export default function MapScreen({ navigation }) {
                             </MapView.Callout>
                         </MapView.Marker>
                     );
-                })*/}
+                })}
             </Map>
         </MapContainer>
     );

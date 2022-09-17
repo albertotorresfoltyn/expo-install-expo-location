@@ -3,11 +3,119 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 27,
             "patches": [
                 {
                     "date": 1652637290059,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1663449444116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,16 @@\n \n     return (\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n-            <Map region={region}>\n+            <Map\n+                region={{\n+                    latitude: 37.78825,\n+                    longitude: -122.4324,\n+                    latitudeDelta: 0.0922,\n+                    longitudeDelta: 0.0421,\n+                }}\n+            >\n                 {restaurants.map((restaurant) => {\n                     return (\n                         <MapView.Marker\n                             key={restaurant.placeId}\n"
+                },
+                {
+                    "date": 1663449829784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n                     latitudeDelta: 0.0922,\n                     longitudeDelta: 0.0421,\n                 }}\n             >\n-                {restaurants.map((restaurant) => {\n+                {/*restaurants.map((restaurant) => {\n                     return (\n                         <MapView.Marker\n                             key={restaurant.placeId}\n                             title={restaurant.name}\n@@ -59,9 +59,9 @@\n                                 />\n                             </MapView.Callout>\n                         </MapView.Marker>\n                     );\n-                })}\n+                })*/}\n             </Map>\n         </MapContainer>\n     );\n }\n"
+                },
+                {
+                    "date": 1663449845377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n-                    latitude: 37.78825,\n+                    latitude: 33.78825,\n                     longitude: -122.4324,\n                     latitudeDelta: 0.0922,\n                     longitudeDelta: 0.0421,\n                 }}\n"
+                },
+                {
+                    "date": 1663449856577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n-                    latitude: 33.78825,\n+                    latitude: -33.78825,\n                     longitude: -122.4324,\n                     latitudeDelta: 0.0922,\n                     longitudeDelta: 0.0421,\n                 }}\n"
+                },
+                {
+                    "date": 1663449869727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n-                    latitude: -33.78825,\n+                    latitude: 33.78825,\n                     longitude: -122.4324,\n                     latitudeDelta: 0.0922,\n                     longitudeDelta: 0.0421,\n                 }}\n"
+                },
+                {
+                    "date": 1663449879502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n-                    latitude: 33.78825,\n+                    latitude: 37.78825,\n                     longitude: -122.4324,\n                     latitudeDelta: 0.0922,\n                     longitudeDelta: 0.0421,\n                 }}\n"
+                },
+                {
+                    "date": 1663449890498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,10 @@\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n-                    latitude: 37.78825,\n-                    longitude: -122.4324,\n+                    latitude: -37.78825,\n+                    longitude: -82.4324,\n                     latitudeDelta: 0.0922,\n                     longitudeDelta: 0.0421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663449905037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -37.78825,\n                     longitude: -82.4324,\n-                    latitudeDelta: 0.0922,\n-                    longitudeDelta: 0.0421,\n+                    latitudeDelta: 0.1922,\n+                    longitudeDelta: 0.1421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663449913788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -37.78825,\n                     longitude: -82.4324,\n-                    latitudeDelta: 0.1922,\n-                    longitudeDelta: 0.1421,\n+                    latitudeDelta: 1.1922,\n+                    longitudeDelta: 1.1421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663450058948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,10 @@\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n-                    latitude: -37.78825,\n-                    longitude: -82.4324,\n+                    latitude: -27.78825,\n+                    longitude: -58.4324,\n                     latitudeDelta: 1.1922,\n                     longitudeDelta: 1.1421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663450076015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -27.78825,\n                     longitude: -58.4324,\n-                    latitudeDelta: 1.1922,\n-                    longitudeDelta: 1.1421,\n+                    latitudeDelta: 0.1922,\n+                    longitudeDelta: 0.1421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663450106120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n                     latitude: -27.78825,\n-                    longitude: -58.4324,\n+                    longitude: -57.4324,\n                     latitudeDelta: 0.1922,\n                     longitudeDelta: 0.1421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663450129119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -27.78825,\n                     longitude: -57.4324,\n-                    latitudeDelta: 0.1922,\n-                    longitudeDelta: 0.1421,\n+                    latitudeDelta: 1.1922,\n+                    longitudeDelta: 1.1421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663450178685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,10 @@\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n-                    latitude: -27.78825,\n-                    longitude: -57.4324,\n+                    latitude: -27.47,\n+                    longitude: -58.8,\n                     latitudeDelta: 1.1922,\n                     longitudeDelta: 1.1421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663450191314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -27.47,\n                     longitude: -58.8,\n-                    latitudeDelta: 1.1922,\n-                    longitudeDelta: 1.1421,\n+                    latitudeDelta: 0.1922,\n+                    longitudeDelta: 0.1421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663450210005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -27.47,\n                     longitude: -58.8,\n-                    latitudeDelta: 0.1922,\n-                    longitudeDelta: 0.1421,\n+                    latitudeDelta: 0.05922,\n+                    longitudeDelta: 0.05421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663450222301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,10 +29,10 @@\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n-                    latitude: -27.47,\n-                    longitude: -58.8,\n+                    latitude: -27.49,\n+                    longitude: -58.92,\n                     latitudeDelta: 0.05922,\n                     longitudeDelta: 0.05421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663450252522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <Map\n                 region={{\n                     latitude: -27.49,\n                     longitude: -58.92,\n-                    latitudeDelta: 0.05922,\n+                    latitudeDelta: 0.06522,\n                     longitudeDelta: 0.05421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n"
+                },
+                {
+                    "date": 1663450266212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n                     latitude: -27.49,\n-                    longitude: -58.92,\n+                    longitude: -58.42,\n                     latitudeDelta: 0.06522,\n                     longitudeDelta: 0.05421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663450283276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n                     latitude: -27.49,\n-                    longitude: -58.42,\n+                    longitude: -58.92,\n                     latitudeDelta: 0.06522,\n                     longitudeDelta: 0.05421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663450297780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n                     latitude: -27.49,\n-                    longitude: -58.92,\n+                    longitude: -58.42,\n                     latitudeDelta: 0.06522,\n                     longitudeDelta: 0.05421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663450306082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -27.49,\n                     longitude: -58.42,\n-                    latitudeDelta: 0.06522,\n-                    longitudeDelta: 0.05421,\n+                    latitudeDelta: 1.06522,\n+                    longitudeDelta: 1.05421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663450318089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -27.49,\n                     longitude: -58.42,\n-                    latitudeDelta: 1.06522,\n-                    longitudeDelta: 1.05421,\n+                    latitudeDelta: 0.6522,\n+                    longitudeDelta: 0.5421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663450341385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n             <MapSearchBar location={location} setLocation={setLocation} />\n             <Map\n                 region={{\n                     latitude: -27.49,\n-                    longitude: -58.42,\n+                    longitude: -58.82,\n                     latitudeDelta: 0.6522,\n                     longitudeDelta: 0.5421,\n                 }}\n             >\n"
+                },
+                {
+                    "date": 1663450350400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n             <Map\n                 region={{\n                     latitude: -27.49,\n                     longitude: -58.82,\n-                    latitudeDelta: 0.6522,\n+                    latitudeDelta: 1.6522,\n                     longitudeDelta: 0.5421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n"
+                },
+                {
+                    "date": 1663450362264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,10 @@\n             <Map\n                 region={{\n                     latitude: -27.49,\n                     longitude: -58.82,\n-                    latitudeDelta: 1.6522,\n-                    longitudeDelta: 0.5421,\n+                    latitudeDelta: 0.7522,\n+                    longitudeDelta: 0.7421,\n                 }}\n             >\n                 {/*restaurants.map((restaurant) => {\n                     return (\n"
+                },
+                {
+                    "date": 1663450437573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,16 +27,9 @@\n \n     return (\n         <MapContainer>\n             <MapSearchBar location={location} setLocation={setLocation} />\n-            <Map\n-                region={{\n-                    latitude: -27.49,\n-                    longitude: -58.82,\n-                    latitudeDelta: 0.7522,\n-                    longitudeDelta: 0.7421,\n-                }}\n-            >\n+            <Map region={region}>\n                 {/*restaurants.map((restaurant) => {\n                     return (\n                         <MapView.Marker\n                             key={restaurant.placeId}\n"
                 }
             ],
             "date": 1652637290059,

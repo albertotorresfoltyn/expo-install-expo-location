@@ -5,12 +5,12 @@ export const LocationContext = createContext();
 
 export const LocationProvider = ({ children }) => {
     const [location, setLocation] = useState("Corrientes");
-    const [coords, setCoords] = useState("-27.49,-58.82");
+    const [coords, setCoords] = useState("-27.5035217,-58.7507989");
     const [region, setRegion] = useState({
-        latitude: -27.49,
-        longitude: -58.82,
-        latitudeDelta: 0.07522,
-        longitudeDelta: 0.07421,
+        latitude: -58.8344,
+        longitude: -27.46784,
+        latitudeDelta: -6.599999999999998,
+        longitudeDelta: 0.01,
     });
 
     const fetchLocation = useCallback(async () => {
@@ -20,6 +20,7 @@ export const LocationProvider = ({ children }) => {
             const { northeast, southwest } = data.results[0].geometry.viewport;
             setCoords(`${lat},${lng}`);
             const latDelta = northeast.lat - southwest.lat;
+            console.log(region);
             setRegion({
                 latitude: lat,
                 longitude: lng,

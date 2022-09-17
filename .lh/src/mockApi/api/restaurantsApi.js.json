@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/mockApi/api/restaurantsApi.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1655904411668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1655904411668,
+            "name": "Commit-0",
+            "content": "import camelize from \"camelize\";\nimport { mocks, mockImages } from \"../mockData/restaurants/index\";\n\n// fetch or get restaurants for a particular location\nconst fetchRestaurants = (location = \"-27.46784, -58.8344\") => {\n    return new Promise((resolve, reject) => {\n        const restaurants = mocks[location];\n\n        setTimeout(() => {\n            if (restaurants && restaurants.results.length > 0) {\n                resolve(formatRestaurants(restaurants));\n            } else {\n                reject(\"Restaurants not found\");\n            }\n        }, 2000);\n    });\n};\n\nconst formatRestaurants = (restaurants) => {\n    const formattedRestaurants = camelize(restaurants);\n\n    return formattedRestaurants.results.map((restaurant) => {\n        return {\n            ...restaurant,\n            address: restaurant.vicinity,\n            isOpenNow:\n                restaurant.openingHours && restaurant.openingHours.openNow,\n            isClosedTemporarily:\n                restaurant.businessStatus === \"CLOSED_TEMPORARILY\",\n            photos: restaurant.photos.map(() => {\n                return mockImages[\n                    Math.floor(mockImages.length * Math.random())\n                ];\n            }),\n        };\n    });\n};\n\n// fetchRestaurants()\n//     .then((data) => {\n//         console.log(data);\n//     })\n//     .catch((err) => {\n//         console.log(err);\n//     });\n\nexport default fetchRestaurants;\n"
+        }
+    ]
+}

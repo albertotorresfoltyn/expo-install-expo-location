@@ -28,7 +28,14 @@ export default function MapScreen({ navigation }) {
     return (
         <MapContainer>
             <MapSearchBar location={location} setLocation={setLocation} />
-            <Map region={region}>
+            <Map
+                region={{
+                    latitude: -27.78825,
+                    longitude: -57.4324,
+                    latitudeDelta: 0.1922,
+                    longitudeDelta: 0.1421,
+                }}
+            >
                 {/*restaurants.map((restaurant) => {
                     return (
                         <MapView.Marker

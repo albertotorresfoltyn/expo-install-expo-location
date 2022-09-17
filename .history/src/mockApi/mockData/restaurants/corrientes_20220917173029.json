@@ -1,0 +1,284 @@
+{
+  "html_attributions": [],
+  "next_page_token": "some token",
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 51.220236,
+          "lng": 4.399357
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 51.2218302802915,
+            "lng": 4.400721680291503
+          },
+          "southwest": {
+            "lat": 51.2191323197085,
+            "lng": 4.398023719708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Sir Anthony Van Dijck",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 720,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 480
+        }
+      ],
+      "place_id": "some place id 15",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": "",
+      },
+      "price_level": 4,
+      "rating": 4.4,
+      "reference": "",
+      "scope": "",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 311,
+      "vicinity": "Oude Koornmarkt 16, Antwerpen"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 51.2129287,
+          "lng": 4.3923955
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 51.2142454302915,
+            "lng": 4.393706330291502
+          },
+          "southwest": {
+            "lat": 51.2115474697085,
+            "lng": 4.391008369708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "name": "Mañana Mañana",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 683,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 1024
+        }
+      ],
+      "place_id": "some place id 16",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": "",
+      },
+      "rating": 4.9,
+      "reference": "",
+      "scope": "",
+      "types": [
+        "cafe",
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 60,
+      "vicinity": "Scheldestraat 15, Antwerpen"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 51.2103946,
+          "lng": 4.4020686
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 51.2117151802915,
+            "lng": 4.403286930291502
+          },
+          "southwest": {
+            "lat": 51.2090172197085,
+            "lng": 4.400588969708497
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "De Broers van Julienne",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1242,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 2038
+        }
+      ],
+      "place_id": "some place id 17",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": "",
+      },
+      "price_level": 2,
+      "rating": 4.1,
+      "reference": "",
+      "scope": "",
+      "types": [
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 335,
+      "vicinity": "Kasteelpleinstraat 45/47, Antwerpen"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 51.21393579999999,
+          "lng": 4.4067937
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 51.2153003802915,
+            "lng": 4.408306030291503
+          },
+          "southwest": {
+            "lat": 51.2126024197085,
+            "lng": 4.405608069708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Het Gebaar",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 427,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 640
+        }
+      ],
+      "place_id": "some place id 18",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": "",
+      },
+      "price_level": 4,
+      "rating": 4.7,
+      "reference": "",
+      "scope": "",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 362,
+      "vicinity": "Leopoldstraat 24, Antwerpen"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 51.219929,
+          "lng": 4.4005703
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 51.22113493029149,
+            "lng": 4.403586499999999
+          },
+          "southwest": {
+            "lat": 51.2184369697085,
+            "lng": 4.399564900000001
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Da Giovanni Groenplaats TAKE OUT",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1772,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 2658
+        }
+      ],
+      "place_id": "some place id 19",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": "",
+      },
+      "price_level": 2,
+      "rating": 3.9,
+      "reference": "",
+      "scope": "",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 4311,
+      "vicinity": "Jan Blomstraat 8, Antwerpen"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 51.2193315,
+          "lng": 4.3989002
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 51.2206958802915,
+            "lng": 4.400262280291502
+          },
+          "southwest": {
+            "lat": 51.2179979197085,
+            "lng": 4.397564319708497
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "name": "Bij Lam & Yin",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 478,
+          "html_attributions": [""],
+          "photo_reference": "",
+          "width": 851
+        }
+      ],
+      "place_id": "some place id 20",
+      "plus_code": {
+        "compound_code": "",
+        "global_code": "",
+      },
+      "price_level": 3,
+      "rating": 4.6,
+      "reference": "",
+      "scope": "",
+      "types": ["restaurant", "food", "point_of_interest", "establishment"],
+      "user_ratings_total": 151,
+      "vicinity": "Reyndersstraat 17, Antwerpen"
+    }
+  ],
+  "status": "OK"
+}

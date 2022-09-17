@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1652570402756,
@@ -16,6 +16,22 @@
                 {
                     "date": 1655591798604,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n export const LocationContext = createContext();\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n-    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n+    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n     const [region, setRegion] = useState({});\n \n     const fetchLocation = useCallback(async () => {\n         try {\n"
+                },
+                {
+                    "date": 1663449538389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,12 @@\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n     const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n-    const [region, setRegion] = useState({});\n+    const [region, setRegion] = useState(                    latitude: 37.78825,\n+        longitude: -122.4324,\n+        latitudeDelta: 0.0922,\n+        longitudeDelta: 0.0421,);\n \n     const fetchLocation = useCallback(async () => {\n         try {\n             const data = await geoCodeLocation(location);\n"
+                },
+                {
+                    "date": 1663449572851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,14 @@\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n     const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n-    const [region, setRegion] = useState(                    latitude: 37.78825,\n+    const [region, setRegion] = useState({\n+        latitude: 37.78825,\n         longitude: -122.4324,\n         latitudeDelta: 0.0922,\n-        longitudeDelta: 0.0421,);\n+        longitudeDelta: 0.0421,\n+    });\n \n     const fetchLocation = useCallback(async () => {\n         try {\n             const data = await geoCodeLocation(location);\n"
+                },
+                {
+                    "date": 1663449595257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n export const LocationContext = createContext();\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n-    const [coords, setCoords] = useState(\"37.7749295,-122.4194155\");\n+    const [coords, setCoords] = useState(\"33.7749295,-122.4194155\");\n     const [region, setRegion] = useState({\n-        latitude: 37.78825,\n+        latitude: 33.78825,\n         longitude: -122.4324,\n         latitudeDelta: 0.0922,\n         longitudeDelta: 0.0421,\n     });\n"
+                },
+                {
+                    "date": 1663450500060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,14 +4,14 @@\n export const LocationContext = createContext();\n \n export const LocationProvider = ({ children }) => {\n     const [location, setLocation] = useState(\"Corrientes\");\n-    const [coords, setCoords] = useState(\"33.7749295,-122.4194155\");\n+    const [coords, setCoords] = useState(\"-27.49,-58.82\");\n     const [region, setRegion] = useState({\n-        latitude: 33.78825,\n-        longitude: -122.4324,\n-        latitudeDelta: 0.0922,\n-        longitudeDelta: 0.0421,\n+        latitude: -27.49,\n+        longitude: -58.82,\n+        latitudeDelta: 0.07522,\n+        longitudeDelta: 0.07421,\n     });\n \n     const fetchLocation = useCallback(async () => {\n         try {\n"
                 }
             ],
             "date": 1652570402756,

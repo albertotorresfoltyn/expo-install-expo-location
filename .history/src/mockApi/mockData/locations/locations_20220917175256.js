@@ -25,10 +25,19 @@ export const locations = {
         results: [
             {
                 geometry: {
-                    location: { lat: -27.49, lng: -58.82 },
+                    location: {
+                        lng: -28.2941251,
+                        lat: -58.9356035,
+                    },
                     viewport: {
-                        northeast: { lat: 33.812, lng: -122.3482 },
-                        southwest: { lat: 33.70339999999999, lng: -122.527 },
+                        northeast: {
+                            lat: -58.9356035,
+                            lng: -28.2941251,
+                        },
+                        southwest: {
+                            lat: 51.2119014697085,
+                            lng: 4.415376169708497,
+                        },
                     },
                 },
             },

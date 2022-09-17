@@ -28,8 +28,13 @@ export default function MapScreen({ navigation }) {
     return (
         <MapContainer>
             <MapSearchBar location={location} setLocation={setLocation} />
-            <Map region={region}>
-                {/*restaurants.map((restaurant) => {
+            <Map initialRegion={{
+      latitude: 37.78825,
+      longitude: -122.4324,
+      latitudeDelta: 0.0922,
+      longitudeDelta: 0.0421,
+    }>
+                {restaurants.map((restaurant) => {
                     return (
                         <MapView.Marker
                             key={restaurant.placeId}
@@ -53,7 +58,7 @@ export default function MapScreen({ navigation }) {
                             </MapView.Callout>
                         </MapView.Marker>
                     );
-                })*/}
+                })}
             </Map>
         </MapContainer>
     );
