@@ -1,7 +1,7 @@
 import corrientes from "./corrientes.json";
 
 export const mocks = {
-    "-27.46784, -58.8344": corrientes,
+    "-27.49,-58.82": corrientes,
 };
 
 export const mockImages = [

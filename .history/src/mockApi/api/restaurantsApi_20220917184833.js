@@ -2,10 +2,11 @@ import camelize from "camelize";
 import { mocks, mockImages } from "../mockData/restaurants/index";
 
 // fetch or get restaurants for a particular location
-const fetchRestaurants = (location = "37.7749295,-122.4194155") => {
+const fetchRestaurants = (location = "-27.49,-58.82") => {
     return new Promise((resolve, reject) => {
         const restaurants = mocks[location];
-
+        debugger;
+        console.log(mocks[location], location);
         setTimeout(() => {
             if (restaurants && restaurants.results.length > 0) {
                 resolve(formatRestaurants(restaurants));

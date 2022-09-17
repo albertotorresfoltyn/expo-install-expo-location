@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1655590853932,
@@ -16,6 +16,10 @@
                 {
                     "date": 1655591633014,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,8 @@\n import corrientes from \"./corrientes.json\";\n-import chicago from \"./chicago.json\";\n-import toronto from \"./toronto.json\";\n-import san_francisco from \"./san_francisco.json\";\n \n export const mocks = {\n     \"37.7749295,-122.4194155\": corrientes,\n-    \"43.653225,-79.383186\": toronto,\n-    \"41.878113,-87.629799\": chicago,\n };\n \n export const mockImages = [\n     \"https://www.foodiesfeed.com/wp-content/uploads/2019/06/top-view-for-box-of-2-burgers-home-made-600x899.jpg\",\n"
+                },
+                {
+                    "date": 1663451437309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import corrientes from \"./corrientes.json\";\n \n export const mocks = {\n-    \"37.7749295,-122.4194155\": corrientes,\n+    \"-27.49,-58.82\": corrientes,\n };\n \n export const mockImages = [\n     \"https://www.foodiesfeed.com/wp-content/uploads/2019/06/top-view-for-box-of-2-burgers-home-made-600x899.jpg\",\n"
                 }
             ],
             "date": 1655590853932,
