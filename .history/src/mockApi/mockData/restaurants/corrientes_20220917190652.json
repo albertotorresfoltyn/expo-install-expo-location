@@ -33,11 +33,11 @@
           "width": 0
         }
       ],
-      "place_id": "curitasanonimas_",
-      "rating": 3,
-      "reference": "Excelente atencion",
+      "place_id": "some place id 1",
+      "rating": 4,
+      "reference": "",
       "user_ratings_total": 832,
-      "vicinity": "Cucha cucha, noveno b"
+      "vicinity": "Quinten Matsijslei 25, Antwerpen"
     },
     {
       "geometry": {
@@ -66,7 +66,7 @@
           "width": 2048
         }
       ],
-      "place_id": "elmondongo_",
+      "place_id": "some place id 2",
       "plus_code": {
         "compound_code": "",
         "global_code": "",
@@ -83,7 +83,7 @@
         "point_of_interest",
         "establishment"
       ],
-      "vicinity": "El dorado 42, al lado de la mantarraya"
+      "vicinity": "Lange Gasthuisstraat 45, Antwerpen"
     }
   ],
   "status": "OK"
