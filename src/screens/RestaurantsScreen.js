@@ -26,10 +26,6 @@ const RestaurantsScreen = ({ navigation }) => {
 
     return (
         <SafeArea>
-            {/*<RestaurantsSearchBar
-                toggled={isToggled}
-                setToggled={() => setIsToggled(!isToggled)}
-    />*/}
             {isToggled && <FavoritesList navigate={navigation.navigate} />}
 
             <RestaurantsContainer

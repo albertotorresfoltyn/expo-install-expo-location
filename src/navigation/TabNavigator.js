@@ -39,9 +39,7 @@ export const TabNavigator = () => {
             }}
         >
             <Tab.Screen name="Salitas" component={RestaurantsStackNavigator} />
-            {/*<Tab.Screen name="Checkout" component={CheckoutStackNavigator} />*/}
             <Tab.Screen name="Map" component={MapScreen} />
-            {/*<Tab.Screen name="Settings" component={SettingsStackNavigator} />*/}
         </Tab.Navigator>
     );
 };
