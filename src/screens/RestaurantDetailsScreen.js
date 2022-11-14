@@ -30,78 +30,58 @@ export default function RestaurantDetailsScreen({ route, navigation }) {
             <RestaurantCard restaurant={restaurant} />
             <ScrollView>
                 <List.Accordion
-                    title="Breakfast"
-                    left={(props) => (
-                        <List.Icon {...props} icon="bread-slice" />
-                    )}
+                    title="Ayudas Sociales"
+                    left={(props) => <List.Icon {...props} icon="" />}
                     expanded={breakfastExpanded}
                     onPress={() => setBreakfastExpanded(!breakfastExpanded)}
                 >
-                    <List.Item title="Eggs Benedict" />
+                    <List.Item title="Pañales (20)" />
                     <Divider />
-                    <List.Item title="Classic Breakfast" />
+                    <List.Item title="Vacunas (30)" />
+                    <Divider />
+                    <List.Item title="Anticonceptivos (30)" />
                 </List.Accordion>
 
                 <Divider />
 
                 <List.Accordion
-                    title="Lunch"
-                    left={(props) => <List.Icon {...props} icon="hamburger" />}
+                    title="Especialidades"
+                    left={(props) => <List.Icon {...props} icon="" />}
                     expanded={lunchExpanded}
                     onPress={() => setLunchExpanded(!lunchExpanded)}
                 >
-                    <List.Item title="Burger w/ Fries" />
+                    <List.Item title="Odontología" />
                     <Divider />
-                    <List.Item title="Steak Sandwich" />
+                    <List.Item title="Pediatría" />
                     <Divider />
-                    <List.Item title="Mushroom Soup" />
+                    <List.Item title="Ginecología" />
                 </List.Accordion>
 
                 <Divider />
 
                 <List.Accordion
-                    title="Dinner"
-                    left={(props) => (
-                        <List.Icon {...props} icon="food-variant" />
-                    )}
+                    title="Médicos"
+                    left={(props) => <List.Icon {...props} icon="" />}
                     expanded={dinnerExpanded}
                     onPress={() => setDinnerExpanded(!dinnerExpanded)}
                 >
-                    <List.Item title="Spaghetti Bolognese" />
+                    <List.Item title="Dra. Maria Azcona (Odontologia MP:44673)" />
                     <Divider />
-                    <List.Item title="Veal Cutlet with Chicken Mushroom Rotini" />
+                    <List.Item title="Dra. Lucía Vallejos Jara (Clínica MP:44687)" />
                     <Divider />
-                    <List.Item title="Steak Frites" />
+                    <List.Item title="Dra. Melisa Calvano (Ginecología MP:42373)" />
                 </List.Accordion>
 
-                <Divider />
-
-                <List.Accordion
-                    title="Drinks"
-                    left={(props) => <List.Icon {...props} icon="cup" />}
-                    expanded={drinksExpanded}
-                    onPress={() => setDrinksExpanded(!drinksExpanded)}
-                >
-                    <List.Item title="Coffee" />
-                    <Divider />
-                    <List.Item title="Tea" />
-                    <Divider />
-                    <List.Item title="Modelo" />
-                    <Divider />
-                    <List.Item title="Coke" />
-                    <Divider />
-                    <List.Item title="Fanta" />
-                </List.Accordion>
             </ScrollView>
             <OrderButton
-                icon="cash-usd"
+                icon=""
                 mode="contained"
                 onPress={() => {
                     addToCart(restaurant, { item: "special", price: 49900 });
                     navigation.navigate("Checkout");
                 }}
             >
-                Order Special Only ₹499!
+                Sacar Turno
             </OrderButton>
         </SafeArea>
     );

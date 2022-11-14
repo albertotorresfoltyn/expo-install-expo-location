@@ -73,7 +73,7 @@ export default function RestaurantCard({ restaurant = {} }) {
         address = "100 some random street",
         isOpenNow = true,
         rating = 4,
-        phone = "+542215068891",
+        phone = "+03794608857",
         isClosedTemporarily = true,
     } = restaurant;
 
